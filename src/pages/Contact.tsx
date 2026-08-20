@@ -25,12 +25,12 @@ export default function Contact() {
               </p>
 
               <div className="space-y-8">
-                 <div className="flex items-start gap-4 sm:gap-6">
+                 <div className="flex items-center gap-4 sm:gap-6">
                     <div className="w-12 h-12 rounded-2xl bg-slate-50 flex items-center justify-center border border-slate-200 text-brand-primary flex-shrink-0">
                        <Mail />
                     </div>
                     <div className="min-w-0 flex-1">
-                       <h4 className="font-bold text-slate-400 uppercase text-[10px] tracking-widest mb-1">Email</h4>
+                       {/* <h4 className="font-bold text-slate-400 uppercase text-[10px] tracking-widest mb-1">Email</h4> */}
                        <p className="text-base sm:text-lg md:text-xl font-bold text-slate-900 break-all">partnerships@echs.systems</p>
                     </div>
                  </div>
