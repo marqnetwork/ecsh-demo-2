@@ -79,7 +79,7 @@ export default function About() {
                  </p>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                  {[
                    { icon: <Users />, title: "Operational Support Services", desc: "Improving the administrative systems, workflows, and operational resources that support efficient healthcare delivery." },
                    { icon: <Target />, title: "Quality, Compliance & Oversight", desc: "Strengthening quality assurance, regulatory compliance, performance monitoring, and organizational accountability." },

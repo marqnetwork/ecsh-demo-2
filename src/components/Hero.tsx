@@ -4,14 +4,16 @@ import type { ReactNode } from "react";
 
 export default function Hero() {
   return (
-    <section className="relative pt-32 sm:pt-36 md:pt-40 lg:pt-44 pb-16 md:pb-24 px-6 md:px-12 overflow-hidden">
+    <section className="relative pt-32 sm:pt-36 md:pt-40 lg:pt-44 pb-16 md:pb-24 px-6 md:px-12 overflow-hidden min-h-screen flex items-center">
       {/* Relatable Background Imagery */}
-      <img
-        src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&q=80&w=2670"
-        className="section-bg-image opacity-30"
-        alt="Institutional building"
-        referrerPolicy="no-referrer"
-      />
+      <div className="absolute inset-0 w-full h-full z-0">
+        <img
+          src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&q=80&w=2670"
+          className="w-full h-full object-cover opacity-30"
+          alt="Institutional building"
+          referrerPolicy="no-referrer"
+        />
+      </div>
       <div className="absolute inset-0 bg-gradient-to-r from-deep-space via-deep-space/40 to-transparent z-[1]" />
       <div className="absolute top-1/4 -left-20 w-96 h-96 bg-brand-primary/5 rounded-full blur-[150px] z-[1]" />
       

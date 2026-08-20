@@ -36,7 +36,7 @@ export default function WhoWeServe() {
 
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-40">
            {audiences.map((audience, i) => (
-             <div key={i} className="group p-10 rounded-[2rem] bg-white border border-slate-200 hover:border-brand-primary/30 transition-all shadow-sm">
+             <div key={i} className={`group p-10 rounded-[2rem] bg-white border border-slate-200 hover:border-brand-primary/30 transition-all shadow-sm ${i === audiences.length - 1 ? 'lg:col-start-2' : ''}`}>
                 <div className="w-12 h-12 rounded-xl bg-slate-50 flex items-center justify-center text-slate-400 group-hover:text-brand-primary group-hover:bg-brand-primary/10 transition-colors mb-8 border border-slate-100">
                    {audience.icon}
                 </div>
@@ -58,14 +58,14 @@ export default function WhoWeServe() {
               <p className="text-white/60 text-lg mb-12 max-w-2xl mx-auto leading-relaxed">
                 Whether you are a prime contractor or a specialized vendor, ECHS provides the administrative and operational tools needed to succeed in complex environments.
               </p>
-              <div className="flex flex-wrap justify-center gap-4">
+              <div className="flex flex-wrap lg:flex-nowrap justify-center gap-2 lg:gap-3 px-4">
                  {[
                    "Operational Support Services",
                    "Quality, Compliance & Oversight",
                    "Clinical Support & Care Continuity",
                    "Specialized Service Solutions"
                  ].map((tag) => (
-                   <span key={tag} className="px-6 py-2 rounded-full border border-white/10 text-[10px] font-black uppercase tracking-widest text-white/40">
+                   <span key={tag} className="px-3 lg:px-4 py-2 rounded-full border border-white/10 text-[8px] lg:text-[9px] font-black uppercase tracking-wide lg:tracking-wider text-white/40 whitespace-nowrap">
                       {tag}
                    </span>
                  ))}

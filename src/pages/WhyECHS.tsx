@@ -58,7 +58,7 @@ export default function WhyECHS() {
                  <p className="text-lg font-bold opacity-90 mb-10 max-w-xl">
                     ECHS helps correctional healthcare providers perform better, scale smarter, and strengthen the infrastructure behind care delivery.
                  </p>
-                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
                     {[
                       "Operational Discipline",
                       "Administrative Support Capability",
@@ -67,9 +67,9 @@ export default function WhyECHS() {
                       "Partner-based Service Expansion",
                       "Correctional Healthcare Market Understanding"
                     ].map((item) => (
-                      <div key={item} className="flex font-black uppercase tracking-tighter items-center gap-2 text-[10px]">
-                         <div className="w-2 h-2 rounded-full bg-white flex-shrink-0" />
-                         {item}
+                      <div key={item} className="flex font-black uppercase tracking-tighter items-start gap-3 text-[10px]">
+                         <div className="w-2 h-2 rounded-full bg-white flex-shrink-0 mt-[0.15rem]" />
+                         <span className="leading-tight">{item}</span>
                       </div>
                     ))}
                  </div>
