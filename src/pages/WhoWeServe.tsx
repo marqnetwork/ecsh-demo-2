@@ -1,15 +1,15 @@
 import { motion } from "motion/react";
-import { CheckCircle2, Building2, UserCircle, Briefcase, Landmark } from "lucide-react";
+import { CheckCircle2, Building2, UserCircle, Briefcase, Landmark, Users, Scale, Package } from "lucide-react";
 
 export default function WhoWeServe() {
   const audiences = [
     { title: "Correctional Healthcare prime Contractors", icon: <Building2 />, desc: "Support for large-scale healthcare operators managing multi-facility contracts." },
-    { title: "Correctional Healthcare Subcontractors", icon: <Building2 />, desc: "Support for large-scale healthcare operators managing multi-facility contracts." },
+    { title: "Correctional Healthcare Subcontractors", icon: <Users />, desc: "Support for large-scale healthcare operators managing multi-facility contracts." },
     { title: "County Jail Healthcare Operators", icon: <Landmark />, desc: "Dedicated solutions for local detention environments and medical directors." },
     { title: "Behavioral Health Contractors", icon: <UserCircle />, desc: "Workflow coordination for mental health and substance abuse treatment providers." },
     { title: "Healthcare Staffing Firms", icon: <Briefcase />, desc: "Administrative and coordination support for clinical workforce partners." },
-    { title: "Public-sector and Justice-related Healthcare Programs", icon: <Landmark />, desc: "State and local agencies focused on reentry, care continuity, and program oversight." },
-    { title: "Healthcare Vendors Serving Detention Environments ", icon: <Landmark />, desc: "Partnerships for lab, pharmacy, and diagnostic services in correctional settings." }
+    { title: "Public-sector and Justice-related Healthcare Programs", icon: <Scale />, desc: "State and local agencies focused on reentry, care continuity, and program oversight." },
+    { title: "Healthcare Vendors Serving Detention Environments ", icon: <Package />, desc: "Partnerships for lab, pharmacy, and diagnostic services in correctional settings." }
   ];
 
   return (
